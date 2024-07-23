@@ -14,7 +14,14 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
-        
+        .glassmorphism{ 
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.9px);
+            -webkit-backdrop-filter: blur(3.9px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            }
         .flip-card {
             background-color: transparent;
             width: 300px;
@@ -84,8 +91,8 @@
 </head>
 <body>
     <section>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
-        <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top glassmorphism">
+            <a class="navbar-brand" href="#">
             <img src="logo1.png" width="80" height="50" class="d-inline-block align-top" alt="Logo">
         
             
@@ -160,11 +167,11 @@
                         </div>
                         <div class="flip-card-back">
                            <ul>
-                            <li>Churn Analytics</li>
-                            <li>Prescriptive Analytics</li>
-                            <li>Predictive Analytics</li>
-                            <li>Descriptive Analytics</li>  
-                            <li>Data Visualization</li>
+                            <h5>Churn Analytics</h5>
+                            <h5>Prescriptive Analytics</h>
+                            <h5>Predictive Analytics</h>
+                            
+                            <h5>Data Visualization</h5>
                            </ul>
                            
                         </div>
@@ -179,9 +186,9 @@
                       </div>
                       <div class="flip-card-back">
                           <ul>
-                              <li>User-Centered Design</li>
-                              <li>Iconography</li>
-                              <li>Responsive Design</li>
+                              <h5>User-Centered Design</h>
+                              <h5>Iconography</h>
+                              <h5>Responsive Design</h>
                           </ul>
                       </div>
                   </div>
@@ -195,11 +202,11 @@
                         </div>
                         <div class="flip-card-back">
                             <ul>
-                           <li>Structural Engineering</li>
-                           <li>Interior Design</li>
-                           <li>3D Modeling</li>
-                           <li>Roofing Systems</li>
-                           <li>Lighting Design</li>
+                           <h5>Structural Engineering</h5>
+                           <h5>Interior Design</h5>
+                           <h5>3D Modeling</h5>
+                           <h5>Roofing Systems</h5>
+                           <h5>Lighting Design</h5>
                         </ul></div>
                     </div>
                 </div>
@@ -214,11 +221,9 @@
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>User-Centered Design</li>
-                            <li>Interaction Design</li>
-                            <li>UI Elements</li>
-                            <li>User Interface (UI) Design</li>  
-                            <li>User Experience (UX) Design</li>
+                            <h5>User-Centered Design</h>
+                            <h5>User Interface (UI) Design</h5>  
+                            <h5>User Experience (UX) Design</h5>
                            </ul>
                     </div>
                 </div>
@@ -232,11 +237,11 @@
                         </div>
                         <div class="flip-card-back">
                             <ul>
-                            <li>HTML (Hypertext Markup Language)</li>
-                            <li>CSS (Cascading Style Sheets)</li>
-                            <li>API Integration</li>
-                            <li>Accessibility (a11y)</li>
-                            <li>Web Components</li>
+                            <h5>HTML & CSS</h5>
+                           
+                            <h5>API Integration</h>
+                            <h5>Accessibility (a11y)</h5>
+                            <h5>Web Components</h5>
                         </ul>
                         </div>
                     </div>
@@ -250,11 +255,11 @@
                         </div>
                         <div class="flip-card-back">
                             <ul>
-                           <li>Session Management</li>
-                            <li>CRUD Operations</li>
-                           <li>Data Security</li>
-                            <li>Backend as a Service</li>
-                           <li>Load Balancing</li>
+                           <h5>Session Management</h5>
+                            <h5>CRUD Operations</h5>
+                           <h5>Data Security</h5>
+                            <h5>Backend as a Service</h5>
+                           <h5>Load Balancing</h5>
                           
                         </ul>
                         </div>
@@ -272,9 +277,9 @@
                     </div>
                     <div class="flip-card-back">
                        <ul>
-                        <li>Software Testing</li>
-                            <li>Test Case</li>
-                                <li>Unit Testing</li>
+                        <h5>Software Testing</h5>
+                            <h5>Test Case</h5>
+                                <h5>Unit Testing</h>
 
                        </ul>
                     </div>
@@ -290,10 +295,10 @@
                         </div>
                         <div class="flip-card-back">
                            <ul>
-                            <li>Web Server</li>
-                            <li>Domain Name</li>
-                            <li>Bandwidth</li>
-                            <li>SSL Certificate</li>
+                            <h5>Web Server</h5>
+                            <h5>Domain Name</h5>
+                            <h5>Bandwidth</h5>
+                            <h5>SSL Certificate</h5>
                            </ul>
                         </div>
                     </div>
@@ -307,10 +312,10 @@
                         </div>
                         <div class="flip-card-back">
                             <ul>
-                                <li>Cloud Service Provider (CSP)</li>
-                                <li>Infrastructure as a Service (IaaS)</li>
-                                <li>Platform as a Service (PaaS)</li>
-                                <li>Software as a Service (SaaS)</li>
+                                
+                                <h5>Infrastructure as a Service (IaaS)</h>
+                                <h5>Platform as a Service (PaaS)</h5>
+                                <h5>Software as a Service (SaaS)</h5>
                             </ul>
                         </div>
                     </div>
@@ -322,7 +327,7 @@
 
     <!-- cards for courses-->
     <div class="container-fluid">
-      <div class="card" style="width: 100%; background-color: rgb(71, 71, 136); color: white; font-weight: bold; text-align: center;">
+      <div class="card" style="width: 100%; background-color: rgb(71, 71, 136); color: white; font-weight: bold; text-align: center; padding-bottom: 25px;">
               <h2 class="card-title" id="courses">Courses Offered</h2>
       </div>
   </div>
@@ -344,7 +349,7 @@
                       </p>
                       <div class="row">
                           <div class="col-md-6">
-                              <div class="card " style="height: 250px;">
+                              <div class="card " style="height: 180px;">
                                   <div class="card-header" style="background-color: rgb(126, 153, 212); ">
                                       Key Skills Acquired:
                                   </div>
@@ -360,7 +365,7 @@
                               </div>
                           </div>
                           <div class="col-md-6" >
-                              <div class="card" style="height: 250px;" >
+                              <div class="card" style="height: 180px;" >
                               
                                   <div class="card-header" style="background-color: rgb(126, 153, 212);">
                                       Projects:
@@ -397,7 +402,7 @@
                       </p>
                       <div class="row">
                           <div class="col-md-6">
-                              <div class="card " style="height: 250px;">
+                              <div class="card " style="height: 180px;">
                                   <div class="card-header" style="background-color: rgb(126, 153, 212); ">
                                       Key Skills Acquired:
                                   </div>
@@ -413,7 +418,7 @@
                               </div>
                           </div>
                           <div class="col-md-6" >
-                              <div class="card" style="height: 250px;" >
+                              <div class="card" style="height: 180px;" >
                               
                                   <div class="card-header" style="background-color: rgb(126, 153, 212);">
                                       Projects:
@@ -450,7 +455,7 @@
                     </p>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card" style="height: 250px;">
+                            <div class="card" style="height: 220px;">
                                 <div class="card-header" style="background-color: rgb(126, 153, 212);">
                                     Key Skills Acquired:
                                 </div>
@@ -468,7 +473,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card" style="height: 250px;">
+                            <div class="card" style="height: 220px;">
                                 <div class="card-header" style="background-color: rgb(126, 153, 212);">
                                     Projects:
                                 </div>
@@ -503,7 +508,7 @@
                       </p>
                       <div class="row">
                           <div class="col-md-6">
-                              <div class="card " style="height: 250px;">
+                              <div class="card " style="height: 220px;">
                                   <div class="card-header" style="background-color: rgb(126, 153, 212); ">
                                       Key Skills Acquired:
                                   </div>
@@ -520,7 +525,7 @@
                               </div>
                           </div>
                           <div class="col-md-6" >
-                              <div class="card" style="height: 250px;" >
+                              <div class="card" style="height: 220px;" >
                               
                                   <div class="card-header" style="background-color: rgb(126, 153, 212);">
                                       Projects:
@@ -560,7 +565,7 @@
                       </p>
                       <div class="row">
                           <div class="col-md-6">
-                              <div class="card " style="height: 250px;">
+                              <div class="card " style="height: 200px;">
                                   <div class="card-header" style="background-color: rgb(126, 153, 212); ">
                                       Key Skills Acquired: 
                                   </div>
@@ -577,7 +582,7 @@
                               </div>
                           </div>
                           <div class="col-md-6" >
-                              <div class="card" style="height: 250px;" >
+                              <div class="card" style="height: 200px;" >
                            
                                   <div class="card-header" style="background-color: rgb(126, 153, 212);">
                                       Projects:
@@ -612,53 +617,53 @@
           </div>
           <!-- Modal Body -->
           <div class="modal-body">
-              <form method="post" action="">
+              <form method="post" action="https://f0fc-2409-408d-3c42-a41d-e1be-90cd-868d-f596.ngrok-free.app/api/create-customer">
                   <div class="form-group row">
                       <label for="name" class="col-sm-4 col-form-label">Name <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                          <input type="text" class="form-control" id="name" name="username" placeholder="Enter your name" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="clgName" class="col-sm-4 col-form-label">College Name <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <input type="text" class="form-control" id="clgName" placeholder="Enter your college name" required>
+                          <input type="text" class="form-control" id="clgName" name="college_name" placeholder="Enter your college name" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="department" class="col-sm-4 col-form-label">Department <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <input type="text" class="form-control" id="department" placeholder="Enter your department" required>
+                          <input type="text" class="form-control" id="department" name="designation" placeholder="Enter your department" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="email" class="col-sm-4 col-form-label">Email address <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+                          <input type="email" class="form-control" id="email" name="email_id" aria-describedby="emailHelp" placeholder="Enter your email" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="phone" class="col-sm-4 col-form-label">Phone Number <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                          <input type="tel" class="form-control" id="phone" name="mobile" placeholder="Enter your phone number" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="address" class="col-sm-4 col-form-label">Address <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+                          <textarea class="form-control" id="address" rows="3" name="address" placeholder="Enter your address" required></textarea>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="resume" class="col-sm-4 col-form-label">Resume <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <input type="file" class="form-control-file" id="resume" required>
+                          <input type="file" class="form-control-file" id="resume" name="resume" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <label for="courses" class="col-sm-4 col-form-label">Courses <span class="text-danger">*</span></label>
                       <div class="col-sm-8">
-                          <select class="form-control" id="courses" required>
+                          <select class="form-control" id="courses" name="course" required>
                               <option value="">Select a course</option>
                               <option>React Development</option>
                               <option>React Native Development</option>
@@ -677,6 +682,7 @@
       </div>
   </div>
 </div><br><br>
+
 <!-- image -->
 
 <style>
@@ -786,7 +792,7 @@ marquee{
            Product Engineering
           </div>
   
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
             
             <span class="ag-courses-item_date">
                 Engineering Rigor to Innovate and Design. responsible for designing, developing, as well as improving existing ones.
@@ -803,7 +809,7 @@ marquee{
             UX/UI Web-Design
           </div>
   
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
            
             <span class="ag-courses-item_date">
                 shaping the experience of using a product, interaction design shapes the experience between the user and the product.
@@ -819,7 +825,7 @@ marquee{
            IT Consulting
           </div>
   
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
             
             <span class="ag-courses-item_date">
                 advisory services that help clients assess different technology strategies
@@ -837,7 +843,7 @@ marquee{
             Mobile Development
           </div>
   
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
            
             <span class="ag-courses-item_date">
                 Delevering stellar mobileApp services.A developer must, 
@@ -855,7 +861,7 @@ marquee{
            QA & Testing
           </div>
   
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
             
             <span class="ag-courses-item_date">
                 test and evaluate new and existing programs to identify and help remove bugs, glitches, and other user experience issues.
@@ -871,7 +877,7 @@ marquee{
           <div class="ag-courses-item_title">
             Front-end development
           </div>
-            <div class="ag-courses-item_date-box">
+            <div class="ag-courses-item_date-box"style="height: 140px;">
             
                 <span class="ag-courses-item_date">
                     Collaborate with designers, optimize applications, develop features, and maintain brand consistency for user-facing interfaces.
@@ -888,7 +894,7 @@ marquee{
           <div class="ag-courses-item_title">
             Digital Marketing
           </div>
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
             
             <span class="ag-courses-item_date">
                 Businesses of all sizes leverage digital channels like email, search engines, and social media to connect with customers.
@@ -905,7 +911,7 @@ marquee{
             API Development
           </div>
   
-          <div class="ag-courses-item_date-box">
+          <div class="ag-courses-item_date-box"style="height: 140px;">
            
             <span class="ag-courses-item_date">
                 Design and implement highly interactive, scalable web apps and prototypes to achieve functionality and actionability.
@@ -913,7 +919,23 @@ marquee{
           </div>
         </a>
       </div>
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
   
+          <div class="ag-courses-item_title">
+            Corporate Training
+          </div>
+  
+          <div class="ag-courses-item_date-box"style="height: 140px;">
+           
+            <span class="ag-courses-item_date">
+                lead orientation and identify and procure effective employee training software and
+                 systems and report on the training's efficiency to leadership and stakeholders.
+            </span>
+          </div>
+        </a>
+      </div>
     </div>
   </div> 
 <!-- portfolio section-->
