@@ -155,3 +155,14 @@ textarea {
     border-color: #007bff;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+.modal1-body {
+    text-align: center;
+    background-color: #e9ecef;
+  }
+  .modal1-body .checkmark {
+    font-size: 50px;
+    color: green;
+  }
+  .modal1-footer {
+    justify-content: flex-end;
+  }

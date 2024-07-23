@@ -682,6 +682,20 @@
       </div>
   </div>
 </div><br><br>
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal1-content">
+        <div class="modal1-body">
+          <div class="checkmark">✅</div>
+          <p>Registered Successfully</p>
+        </div>
+        <div class="modal1-footer">
+          <button type="button" class="btn btn-secondary" id="closeButton">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- image -->
 
@@ -1235,7 +1249,15 @@ marquee{
         .catch((error) => {
             console.error('Error:', error);
         });
+        document.getElementById('closeButton').addEventListener('click', function() {
+      location.reload(); // Refresh the page
     });
+    });
+
+    // Function to reset the form
+    function refreshPage() {
+      location.reload(); // Refresh the entire webpage
+    }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
