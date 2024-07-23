@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- style -->
+    <style>
+        .ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+body {
+  background-color: #444444;
+}
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #504f4f;
+
+  overflow: hidden;
+
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #6cc27e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #bb6647;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #885db3;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cf559e;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #5251a5;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+    </style>
+<!-- nav -->
+
+<section>
+    <nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" > 
+             <a class="nav-link" href="index.html" style="text-decoration: none; font-size: 30px; color: #FFF;">Home</a> 
+            </ul>
+        </div>
+    </nav>
+    </section>
+    <!-- Main -->
+
+<div class="ag-format-container">
+    <u><p class="services" style="color: white; font-size: 50px; text-align: center;">Our Services</p></u>
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+           Product Engineering
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                Engineering Rigor to Innovate and Design. responsible for designing, developing, and testing new products, as well as improving existing ones.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            UX/UI Web-Design
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+           
+            <span class="ag-courses-item_date">
+                shaping the experience of using a product, interaction design shapes the experience between the user and the product.
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+           IT Consulting
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                advisory services that help clients assess different technology strategies and, in doing so, 
+                align technology strategies with their business or process strategies.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Mobile Development
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+           
+            <span class="ag-courses-item_date">
+                Delevering stellar mobileApp services.A developer must, 
+                often working closely with a designer to achieve the best user experience (UX) results.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+           QA & Testing
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                test and evaluate new and existing programs to identify and help remove bugs, glitches, and other user experience issues.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Front-end development
+          </div>
+            <div class="ag-courses-item_date-box">
+            
+                <span class="ag-courses-item_date">
+                    Collaborate with designers, optimize applications, develop features, and maintain brand consistency for user-facing interfaces.
+                </span>
+              </div>
+          
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg">
+          </div>
+          <div class="ag-courses-item_title">
+            Digital Marketing
+          </div>
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                Businesses of all sizes leverage digital channels like email, search engines, and social media to connect with customers.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            API Development
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+           
+            <span class="ag-courses-item_date">
+                Design and implement highly interactive, scalable web apps and prototypes
+            </span>
+          </div>
+        </a>
+      </div>
+  
+    </div>
+  </div>
+
+</body>
+</html>

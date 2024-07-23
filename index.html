@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software develop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+           background-image: url('b.jpg');
+           /* background-color: black; */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flip-card-back {
+            /* background-color: grey; */
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    img{
+        display: flex;
+        width: 100%;
+    }
+    .word{
+        padding: 60px;
+        text-align: center;
+        color: white;
+         /* background-color: rgba(0, 21, 138, 0.568);  */
+    }
+ 
+.navbar{
+    height: fit-content;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white; /* Set text color to white */
+  font-size:large;
+}
+    </style>
+</head>
+<body>
+    <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <a class="navbar-brand" href="#">
+            <img src="logo1.png" width="80" height="50" class="d-inline-block align-top" alt="Logo">
+        
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#teams">Team</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+    </section>
+
+    <img src="banner1.png" alt="" style="display: block;">
+    <div class="word">
+        <h4>We specialize in delivering cutting-edge software solutions tailored to meet your unique business needs.
+             With a dedicated team of experienced developers, designers, and project managers, we bring innovation
+              and efficiency to every project we undertake.</h4>
+     </div>
+
+<!-- container -->
+
+<div class="container ">
+    <div class="row">
+      <div class="col-sm mt-3 mt-sm-0" style="background-color: aliceblue; padding: 20px; text-align: center; font-weight: bold; font-size: 24px;">
+      
+        <p>750+</p>
+        <p>IT pros</p>
+      </div>
+      <div class="col-sm mt-3 mt-sm-0" style="background-color: rgb(178, 214, 202);  padding: 20px; text-align: center; font-weight: bold; font-size: 24px;">
+        <p>550+</p>
+       <p>developers</p>
+      </div>
+      <div class="col-sm mt-3 mt-sm-0" style="background-color: beige;  padding: 20px; text-align: center; font-weight: bold; font-size: 24px;">
+        <p>60+</p>
+        <p>project managers</p>
+      </div>
+      <div class="col-sm mt-3 mt-sm-0" style="background-color: rgb(170, 154, 130);  padding: 20px; text-align: center; font-weight: bold; font-size: 24px;">
+       <p>Certified</p>
+        <p>platform experts</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Cards details-->
+
+    <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('Businessanalytics.jpg');">
+                            <h3>Business Analytics</h3>
+                        </div>
+                        <div class="flip-card-back">
+                           <ul>
+                            <li>Churn Analytics</li>
+                            <li>Prescriptive Analytics</li>
+                            <li>Predictive Analytics</li>
+                            <li>Descriptive Analytics</li>  
+                            <li>Data Visualization</li>
+                           </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('uxui.webp');">
+                            <h3>UX and UI Design</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <ul>
+                                <li>User-Centered Design</li>
+                                <li>Interaction Design</li>
+                                <li>UI Elements</li>
+                                <li>User Interface (UI) Design</li>  
+                                <li>User Experience (UX) Design</li>
+                               </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('architecture.webp');">
+                            <h3>Architecture</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <ul>
+                           <li>Structural Engineering</li>
+                           <li>Interior Design</li>
+                           <li>3D Modeling</li>
+                           <li>Roofing Systems</li>
+                           <li>Lighting Design</li>
+                        </ul></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('frontend.jpg');">
+                            <h3>Front end Development</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <ul>
+                            <li>HTML (Hypertext Markup Language)</li>
+                            <li>CSS (Cascading Style Sheets)</li>
+                            <li>API Integration</li>
+                            <li>Accessibility (a11y)</li>
+                            <li>Web Components</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('backend.jpg');">
+                            <h3>Back end Development</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <ul>
+                           <li>Session Management</li>
+                            <li>CRUD Operations</li>
+                           <li>Data Security</li>
+                            <li>Backend as a Service</li>
+                           <li>Load Balancing</li>
+                          
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('Testing.avif');">
+                            <h3>Testing and QA</h3>
+                        </div>
+                        <div class="flip-card-back">
+                           <ul>
+                            <li>Software Testing</li>
+                                <li>Test Case</li>
+                                    <li>Unit Testing</li>
+
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('appDesign.jpg');">
+                            <h3>Application Design</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <ul>
+                                <li>User-Centered Design</li>
+                                <li>Iconography</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('webHosting.jpg');">
+                            
+                        </div>
+                        <div class="flip-card-back">
+                           <ul>
+                            <li>Web Server</li>
+                            <li>Domain Name</li>
+                            <li>Bandwidth</li>
+                            <li>SSL Certificate</li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-image: url('cloud.jpg');">
+                            <h3>Cloud Server</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <ul>
+                                <li>Cloud Service Provider (CSP)</li>
+                                <li>Infrastructure as a Service (IaaS)</li>
+                                <li>Platform as a Service (PaaS)</li>
+                                <li>Software as a Service (SaaS)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<!-- image -->
+
+<style>
+    .img {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.img img {
+    width:400px; /* Adjusted to be 100% for better responsiveness */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.7; /* Adjust the opacity as needed */
+}
+.img-text {
+    position: absolute;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px black;
+    font-size: vw; /* Use vw (viewport width) for better responsiveness */
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .img img {
+        width: 100%; /* Full width for smaller screens */
+    }
+    .img-text {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+        width: 90%; /* Wider width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .img-text {
+        font-size: 7vw; /* Further adjustment for very small screens */
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+    footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+marquee{
+    background-color: whitesmoke;
+}
+.carousel-item {
+            max-width: 600px; /* Adjust width as needed */
+            justify-content: center; /* Center align the carousel */
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+           
+            align-items: center;
+        }
+    
+</style>
+
+<div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner" style="margin-left: 30%;">
+        <div class="carousel-item active">
+            <img src="1.png" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="2.png" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="3.png" alt="Image 3">
+        </div>
+        <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+   <!-- Services section-->
+   <div class="ag-format-container" id="services">
+    <u><p class="services" style="color: white; font-size: 50px; text-align: center;">Our Services</p></u>
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+           Product Engineering
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                Engineering Rigor to Innovate and Design. responsible for designing, developing, as well as improving existing ones.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            UX/UI Web-Design
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+           
+            <span class="ag-courses-item_date">
+                shaping the experience of using a product, interaction design shapes the experience between the user and the product.
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+           IT Consulting
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                advisory services that help clients assess different technology strategies
+                align with their business or process strategies.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Mobile Development
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+           
+            <span class="ag-courses-item_date">
+                Delevering stellar mobileApp services.A developer must, 
+                often working closely with a designer to achieve the best user experience.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+           QA & Testing
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                test and evaluate new and existing programs to identify and help remove bugs, glitches, and other user experience issues.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Front-end development
+          </div>
+            <div class="ag-courses-item_date-box">
+            
+                <span class="ag-courses-item_date">
+                    Collaborate with designers, optimize applications, develop features, and maintain brand consistency for user-facing interfaces.
+                </span>
+              </div>
+          
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg">
+          </div>
+          <div class="ag-courses-item_title">
+            Digital Marketing
+          </div>
+          <div class="ag-courses-item_date-box">
+            
+            <span class="ag-courses-item_date">
+                Businesses of all sizes leverage digital channels like email, search engines, and social media to connect with customers.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            API Development
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+           
+            <span class="ag-courses-item_date">
+                Design and implement highly interactive, scalable web apps and prototypes to achieve functionality and actionability.
+            </span>
+          </div>
+        </a>
+      </div>
+  
+    </div>
+  </div> 
+<!-- portfolio section-->
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+    .zoomWrapper {
+      /* border: 1px dashed #B7B8BD; */
+      max-width: 600px;
+      overflow: hidden;
+      margin: 0 auto 40px auto;
+      /* -- Prevent flicker -- */
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    .zoomWrapper img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .zoomWrapper img:hover {
+      -webkit-transform: scale(1.25);
+      -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      -o-transform: scale(1.25);
+      transform: scale(1.25);
+    }
+
+    @keyframes flash {
+      0%   { opacity: 1; }
+      50%  { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .flasher {
+      animation: flash 300ms infinite;
+    }
+
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    p {
+      text-align: center;
+      font-style: italic;
+    }
+    .zoomWrapper img.card-img-top1 {
+  height: 420px; /* Adjust this value as per your requirement */
+}
+.zoomWrapper img.card-img-top2{
+    height: 420px;
+}
+.zoomWrapper img.card-img-top3{
+    height: 420px;
+}
+.zoomWrapper img.card-img-top4{
+    height: 420px;
+}
+.zoomWrapper img.card-img-top5{
+    height: 420px;
+}
+  </style>
+  <div class="container" id="portfolio">
+    <p style="font-size: 40px; padding-top: 30px; color: white; padding-bottom: 30px;">Projects we successfully developed</p>
+
+    <div class="row">
+      <!-- First container with image -->
+      <div class="col-md-6">
+        <div class="zoomWrapper">
+          <img src="portt1.png" class="card-img-top" alt="Image 1">
+        </div>
+       
+      </div>
+      <!-- Second container with image -->
+      <div class="col-md-6" >
+        <div class="zoomWrapper">
+          <img src="port2.jpeg" class="card-img-top1" alt="Image 2" >
+        </div>
+        <!-- <div class="card mb-3"> -->
+          <!-- <div class="card-body"> -->
+            <!-- <h5 class="card-title">Second Container</h5> -->
+            <!-- <p class="card-text">This is the content for the second container. You can add more details here.</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+<!--  -->
+<div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port3.jpg" class="card-img-top2" alt="Image 3">
+    </div>
+    <!-- <div class="card mb-3"> -->
+      <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Second Container</h5> -->
+ <!-- /       <p class="card-text">This is the content for the second container. You can add more details here.</p> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+  <!--  -->
+  <div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port4.jpg" class="card-img-top3" alt="Image 2">
+    </div>
+    <!-- <div class="card mb-3"> -->
+      <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Second Container</h5> -->
+        <!-- <p class="card-text">This is the content for the second container. You can add more details here.</p> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+<!--  -->
+  <div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port5.png" class="card-img-top4" alt="Image 2">
+    </div>
+    
+  </div>
+<!--  -->
+  <div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port6.jpg" class="card-img-top5" alt="Image 2">
+    </div>
+   
+  </div>
+
+
+
+    </div>
+  </div>
+  <!-- Customer reviews-->
+  <div class="container" id="testimonials">
+    <p class="mt-5 mb-4" style="color: white; font-size: 40px;">Customer Reviews</p>
+
+    <div class="row">
+      <!-- Review Card 1 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="c1.jpg" class="card-img-left" alt="Eben Paul">
+          <div class="card-body">
+            <h5 class="card-title">Eben Paul</h5>
+            <div class="stars" title="4.5 stars">
+              ★★★★★
+            </div>
+            <p class="card-text">Thank you for your outstanding work in automating the training and placement process. Your dedication and expertise have greatly enhanced our efficiency and effectiveness, enabling us to reach across India and build a stronger business.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="c2.jpeg" class="card-img-left" alt="Customer 2">
+          <div class="card-body">
+            <h5 class="card-title">Siddhu</h5>
+            <div class="stars" title="5 stars">
+              ★★★★★
+            </div>
+            <p class="card-text">I deeply appreciate your exceptional work in automating the real estate and all my business processes. Your dedication and expertise have significantly boosted our efficiency and productivity, allowing us to expand our reach across India and build a robust business foundation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="c3.jpeg" class="card-img-left" alt="Customer 3">
+          <div class="card-body">
+            <h5 class="card-title">Sathish Kumar</h5>
+            <div class="stars" title="3.5 stars">
+              ★★★★★
+            </div>
+            <p class="card-text">I am incredibly grateful for your outstanding work in automating the hotel management and all my business processes. Your dedication and innovation have greatly enhanced our efficiency and service quality, strengthen our business operations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Teams section-->
+<div class="container team-section" id="teams">
+    <h2 style="font-size: 40px;">Founders</h2>
+    <p>Meet the talented individuals who make company great.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card team-card">
+                <div class="shine"></div>
+                <img src="Founder1.jpeg" style="height: 400px;" alt="Team Member 1">
+                <div class="card-body team-card-body">
+                    <p class="card-text team-card-text text-dark">Name: Gokulraja L P</p>
+                    <p class="card-text team-card-text">Major: Technical</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card team-card">
+                <div class="shine"></div>
+                <img src="Founder2.jpeg" style="height: 400px;" alt="Team Member 2">
+                <div class="card-body team-card-body">
+                    <p class="card-text team-card-text text-dark">Name: Manikavasakar G</p>
+                    <p class="card-text team-card-text">Major: Operational</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add more rows and columns for additional team members -->
+</div>
+
+<div class="img">
+    <img src="m.jpg" alt="" >
+    <div class="img-text" >We achieve project success,<br> no matter what</div>
+   
+</div><br><br>
+<marquee behavior="scroll" direction="left">
+        <span class="marquee-text">Innovative Solutions | Agile Development | Cutting-Edge Technology | Client-Centric Approach | Quality Assurance | Scalable Architectures | Continuous Integration | Expert Dev Teams</span>
+    </marquee>
+    <!-- footer -->
+   <!-- Footer section -->
+   <footer class="bg-dark text-white pt-4" style="margin-top: 80px;">
+    <div class="container1">
+      <div class="row">
+        <!-- Contact Us Section -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Contact Us</h5>
+          <p style="font-size: 20px; font-weight: lighter;">MADIVALA
+            <br>BANGALORE - 560068</p>
+        </div>
+        <!-- Phone Section -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Phone</h5>
+          <p><a href="tel:+1234567890" class="text-white" style="font-size: 20px; font-weight: lighter;">+91 77088 05630</a></p>
+        </div>
+        <!-- Email Section -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Email</h5>
+          <p><a href="mailto:thiran360ai.com" class="text-white" style="font-size: 20px; font-weight: lighter;">thiran360ai.com</a></p>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="#services" class="text-white">Services</a></li>
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-white">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-white">
+      <div class="row">
+        <!-- Social Media Icons -->
+        <div class="col text-center">
+          <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <!-- Copyright -->
+        <div class="col text-center">
+          <p class="mb-0" style="font-size: 20px;">&copy; 2024 Software Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+      
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

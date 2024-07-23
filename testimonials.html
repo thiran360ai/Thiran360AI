@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(212, 210, 210);
+      font-family: Arial, sans-serif;
+    }
+    .nav-link {
+      text-decoration: none;
+      font-size: 30px;
+      color: black;
+      margin: 20px 0;
+      display: inline-block;
+    }
+    .nav-link:hover {
+      color: #007bff;
+    }
+    .review-card {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .review-card img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+      transition: transform 0.3s ease;
+    }
+    .review-card:hover img {
+      transform: scale(1.1);
+    }
+    .review-card .card-body {
+      flex: 1;
+    }
+    .stars {
+      color: #ffc107; /* Yellow color for stars */
+      font-size: 1.2rem;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .container p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <p class="mt-5 mb-4">Customer Reviews</p>
+
+    <div class="row">
+      <!-- Review Card 1 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="p1.jpg" class="card-img-left" alt="Customer 1">
+          <div class="card-body">
+            <h5 class="card-title">Customer Name 1</h5>
+            <div class="stars" title="4.5 stars">
+              ★★★★☆
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="p2.webp" class="card-img-left" alt="Customer 2">
+          <div class="card-body">
+            <h5 class="card-title">Customer Name 2</h5>
+            <div class="stars" title="5 stars">
+              ★★★★★
+            </div>
+            <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="p4.jpg" class="card-img-left" alt="Customer 3">
+          <div class="card-body">
+            <h5 class="card-title">Customer Name 3</h5>
+            <div class="stars" title="3.5 stars">
+              ★★★☆☆
+            </div>
+            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 4 -->
+      <div class="col-md-12">
+        <div class="card review-card">
+          <img src="p5.jpg" class="card-img-left" alt="Customer 4">
+          <div class="card-body">
+            <h5 class="card-title">Customer Name 4</h5>
+            <div class="stars" title="5 stars">
+              ★★★★★
+            </div>
+            <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Containers in a Row with Images</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+    .zoomWrapper {
+      /* border: 1px dashed #B7B8BD; */
+      max-width: 600px;
+      overflow: hidden;
+      margin: 0 auto 40px auto;
+      /* -- Prevent flicker -- */
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    .zoomWrapper img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .zoomWrapper img:hover {
+      -webkit-transform: scale(1.25);
+      -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      -o-transform: scale(1.25);
+      transform: scale(1.25);
+    }
+
+    @keyframes flash {
+      0%   { opacity: 1; }
+      50%  { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .flasher {
+      animation: flash 300ms infinite;
+    }
+
+    body {
+      background: #DAD9E2;
+      font-family: Lato, sans-serif;
+      color: #666666;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    p {
+      text-align: center;
+      font-style: italic;
+    }
+    .zoomWrapper img.card-img-top1 {
+  height: 420px; /* Adjust this value as per your requirement */
+}
+.zoomWrapper img.card-img-top2{
+    height: 420px;
+}
+.zoomWrapper img.card-img-top3{
+    height: 420px;
+}
+.zoomWrapper img.card-img-top4{
+    height: 420px;
+}
+.zoomWrapper img.card-img-top5{
+    height: 420px;
+}
+  </style>
+</head>
+<body>
+  <a class="nav-link" href="index.html" style="text-decoration: none; font-size: 30px; color: gray;">Home</a>
+  <div class="container">
+    <p style="font-size: 40px; padding-top: 30px; padding-bottom: 30px;">Projects we successfully developed</p>
+
+    <div class="row">
+      <!-- First container with image -->
+      <div class="col-md-6">
+        <div class="zoomWrapper">
+          <img src="portt1.png" class="card-img-top" alt="Image 1">
+        </div>
+       
+      </div>
+      <!-- Second container with image -->
+      <div class="col-md-6" >
+        <div class="zoomWrapper">
+          <img src="port2.jpeg" class="card-img-top1" alt="Image 2" >
+        </div>
+        <!-- <div class="card mb-3"> -->
+          <!-- <div class="card-body"> -->
+            <!-- <h5 class="card-title">Second Container</h5> -->
+            <!-- <p class="card-text">This is the content for the second container. You can add more details here.</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+<!--  -->
+<div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port3.jpg" class="card-img-top2" alt="Image 3">
+    </div>
+    <!-- <div class="card mb-3"> -->
+      <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Second Container</h5> -->
+ <!-- /       <p class="card-text">This is the content for the second container. You can add more details here.</p> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+  <!--  -->
+  <div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port4.jpg" class="card-img-top3" alt="Image 2">
+    </div>
+    <!-- <div class="card mb-3"> -->
+      <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Second Container</h5> -->
+        <!-- <p class="card-text">This is the content for the second container. You can add more details here.</p> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+<!--  -->
+  <div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port5.png" class="card-img-top4" alt="Image 2">
+    </div>
+    
+  </div>
+<!--  -->
+  <div class="col-md-6">
+    <div class="zoomWrapper">
+      <img src="port6.jpg" class="card-img-top5" alt="Image 2">
+    </div>
+   
+  </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js" integrity="sha384-D5BgnRYOjQK7k7osK3jreF8hK0pBAaD2u4A/iyJ1u1Yjo8zL5HR4vDukFALynbfD" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shPpV+7Lh/W3ZbIv/lkkcC5F0+DJaGOnxCtXw" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #7b7d7e;
+            color: #333;
+        }
+
+        .team-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .team-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .team-card {
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .team-card-body {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .team-card-title {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .team-card-text {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container team-section">
+    <h2>Our Team</h2>
+    <p>Meet the talented individuals who make our company great.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card team-card">
+                <img src="developer1.jpg" alt="Team Member 1">
+                <div class="card-body team-card-body">
+                    <h5 class="card-title team-card-title">Team Member 1</h5>
+                    <p class="card-text team-card-text">Position: Business Analyst</p>
+                    <p class="card-text team-card-text">Description: Expert in data analysis and business strategy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card team-card">
+                <img src="developer2.jpg" alt="Team Member 2">
+                <div class="card-body team-card-body">
+                    <h5 class="card-title team-card-title">Team Member 2</h5>
+                    <p class="card-text team-card-text">Position: UX/UI Designer</p>
+                    <p class="card-text team-card-text">Description: Specializes in user experience and interface design.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card team-card">
+                <img src="developer3.jpg" alt="Team Member 3">
+                <div class="card-body team-card-body">
+                    <h5 class="card-title team-card-title">Team Member 3</h5>
+                    <p class="card-text team-card-text">Position: Front-end Developer</p>
+                    <p class="card-text team-card-text">Description: Builds interactive and dynamic web applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add more rows and columns for additional team members -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
